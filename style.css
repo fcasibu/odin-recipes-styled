@@ -10,26 +10,25 @@ body {
 a.button {
   background-color: white;
   padding: 10px;
-  border: 2px solid purple;
   border-radius: 15px;
-  position: absolute;
   text-decoration: none;
   color: black;
-  position: relative;
 }
 
 .main-page {
-  top: 40px;
-  left: 20px;
+  position: fixed;
+  top: -10px;
+  left: 3px;
 }
 
 .gotop {
-  bottom: 70px;
-  left: 30px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
 }
 
 a.button:hover {
-  background-color: red;
+  background-color: lightpink;
   color: black;
 }
 
@@ -68,20 +67,30 @@ h2 {
 }
 
 .container {
+  width: 80%;
+  box-sizing: border-box;
   padding: 20px;
   background-color: white;
-  margin: 10%;
   border-radius: 30px;
+  margin: 5% 10%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .home {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   margin-top: 10px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .home div > a > div {
   margin-bottom: 10px;
+}
+
+.home div {
+  flex: 1;
 }
